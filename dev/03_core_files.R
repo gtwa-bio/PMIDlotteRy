@@ -64,7 +64,7 @@ usethis::use_github_actions_badge("check-bioc.yml")
 
 ## Enable using tests
 usethis::use_testthat()
-usethis::use_test("example_test") ## You need at least one test to run covr
+usethis::use_test("lottery") ## You need at least one test to run covr
 usethis::use_coverage()
 
 ## Re-knit your README.Rmd file to update your README.md file

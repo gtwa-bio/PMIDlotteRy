@@ -18,6 +18,16 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![GitHub issues](https://img.shields.io/github/issues/gtwa-bio/PMIDlotteRy)](https://github.com/gtwa-bio/PMIDlotteRy/issues)
 [![GitHub pulls](https://img.shields.io/github/issues-pr/gtwa-bio/PMIDlotteRy)](https://github.com/gtwa-bio/PMIDlotteRy/pulls)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![Bioc release status](http://www.bioconductor.org/shields/build/release/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/PMIDlotteRy)
+[![Bioc devel status](http://www.bioconductor.org/shields/build/devel/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy)
+[![Bioc downloads rank](https://bioconductor.org/shields/downloads/release/PMIDlotteRy.svg)](http://bioconductor.org/packages/stats/bioc/PMIDlotteRy/)
+[![Bioc support](https://bioconductor.org/shields/posts/PMIDlotteRy.svg)](https://support.bioconductor.org/tag/PMIDlotteRy)
+[![Bioc history](https://bioconductor.org/shields/years-in-bioc/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since)
+[![Bioc last commit](https://bioconductor.org/shields/lastcommit/devel/bioc/PMIDlotteRy.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy/)
+[![Bioc dependencies](https://bioconductor.org/shields/dependencies/release/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since)
+[![check-bioc](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml)
+[![Codecov test coverage](https://codecov.io/gh/gtwa-bio/PMIDlotteRy/branch/devel/graph/badge.svg)](https://app.codecov.io/gh/gtwa-bio/PMIDlotteRy?branch=devel)
 <!-- badges: end -->
 
 The goal of `PMIDlotteRy` is to ...
@@ -46,18 +56,6 @@ lotto_numbers <- c(38863995, 38864247, 38862712, 38862494)
 lottery(lotto_numbers)
 ```
 
-
-## Citation
-
-Below is the citation output from using `citation('PMIDlotteRy')` in R. Please
-run this yourself to check for any updates on how to cite __PMIDlotteRy__.
-
-```{r 'citation', eval = requireNamespace('PMIDlotteRy')}
-print(citation('PMIDlotteRy'), bibtex = TRUE)
-```
-
-Please note that the `PMIDlotteRy` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
-
 ## Code of Conduct
 
 Please note that the `PMIDlotteRy` project is released with a [Contributor Code of Conduct](http://bioconductor.org/about/code-of-conduct/). By contributing to this project, you agree to abide by its terms.
@@ -74,4 +72,7 @@ For more details, check the `dev` directory.
 
 This package was developed using `r BiocStyle::Biocpkg('biocthis')`.
 
+## Acknowledgements
+
+Please note that the `PMIDlotteRy` was only made possible thanks to many other R and bioinformatics software authors, which are cited either in the vignettes and/or the paper(s) describing this package.
 

@@ -13,5 +13,5 @@ get_PMID <- function() {
   set.seed(as.integer(gsub("-", "", Sys.Date())))
   PMID <- sample(search_results$ids, 1)
 
-  return(PMID)
+  return(as.numeric(PMID))
 }
