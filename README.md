@@ -51,12 +51,11 @@ This is a basic example which shows you how to play the game:
 library("PMIDlotteRy")
 
 ## Pick your lottery numbers
-lotto_numbers <- c(38863995, 38864247, 38862712, 38862494)
+lotto_numbers <- c(38863995, 38864247, 38862711, 38862494)
 
 ## Play!
 lottery(lotto_numbers)
-#> Loading required package: rentrez
-#> [1] "Congratulations! You have won the lottery!"
+#> [1] "Sorry, better luck next time."
 ```
 
 ## Code of Conduct
