@@ -1,12 +1,12 @@
 #' Title
 #'
 #' @return PMID for today
-#' @export
+#' @importFrom rentrez entrez_search
+#'
 #'
 #' @examples
 #' get_PMID
 get_PMID <- function() {
-    library(rentrez)
     # Search for the last 100 articles published related to genetics
     search_results <- rentrez::entrez_search(db = "pubmed", term = "genetics", retmax = 100)
 
