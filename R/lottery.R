@@ -9,7 +9,7 @@
 #' lottery(38863995)
 #' lottery(c(38863995, 38864247, 38862712, 38862494))
 #'
-lottery <- function(lotto_numbers){
+lottery <- function(lotto_numbers) {
     # Select a PMID based on the date
     PMID_today <- get_PMID()
 

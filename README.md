@@ -55,6 +55,7 @@ lotto_numbers <- c(38863995, 38864247, 38862712, 38862494)
 
 ## Play!
 lottery(lotto_numbers)
+#> Loading required package: rentrez
 #> [1] "Congratulations! You have won the lottery!"
 ```
 
