@@ -13,5 +13,5 @@ PMID for today
 Title
 }
 \examples{
-get_PMID
+get_PMID()
 }
