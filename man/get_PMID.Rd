@@ -17,4 +17,5 @@ Choose today's PMID
 }
 \examples{
 get_PMID()
+get_PMID("neurobiology")
 }
