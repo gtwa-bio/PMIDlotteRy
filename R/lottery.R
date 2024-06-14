@@ -21,9 +21,15 @@ lottery <- function(lotto_numbers, subject = "genomics") {
     record_xml <- entrez_fetch(db = "pubmed", id = PMID_today, rettype = "xml")
     record <- XML::xmlParse(record_xml)
 
-    # Extract title and abstract
+    # Extract title and author list
     title <- XML::xpathSApply(record, "//ArticleTitle", xmlValue)
-    abstract <- XML::xpathSApply(record, "//AbstractText", xmlValue)
+    authors <- XML::xpathSApply(record, "//AuthorList/Author", function(x) {
+        lastName <- XML::xpathSApply(x, "./LastName", xmlValue)
+        initials <- XML::xpathSApply(x, "./Initials", xmlValue)
+        paste(lastName, initials)
+        })
+
+    author_list <- paste(authors, collapse = ", ")
 
     # Set payout
     set.seed(as.integer(gsub("-", "", Sys.Date())))
@@ -31,13 +37,17 @@ lottery <- function(lotto_numbers, subject = "genomics") {
 
     # Check if the generated PMID is in the input vector
     if (PMID_today %in% lotto_numbers) {
-        print("Congratulations! You have won the lottery!")
-        print(paste0( "You've won: $", payout))
+        cat(paste0("Congratulations! You have won the lottery! \n",
+                   "You've won: $", payout))
     } else {
-        print("Sorry, better luck next time.")
+        cat("Sorry, better luck next time. \n")
     }
 
-    print((paste0("Check out today's paper in ", subject, "!")))
-    print(paste0("Title: ", title))
-    print(paste0("Abstract: ", abstract))
+    cat(
+      paste0("\n", "Check out today's paper in ", subject, "!", "\n",
+             "Title: ", title, "\n",
+             "Authors: ", author_list, "\n",
+             "PMID: ", PMID_today)
+
+      )
 }
