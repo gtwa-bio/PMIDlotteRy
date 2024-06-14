@@ -30,7 +30,9 @@ dependencies](https://bioconductor.org/shields/dependencies/release/PMIDlotteRy.
 coverage](https://codecov.io/gh/gtwa-bio/PMIDlotteRy/branch/devel/graph/badge.svg)](https://app.codecov.io/gh/gtwa-bio/PMIDlotteRy?branch=devel)
 <!-- badges: end -->
 
-The goal of `PMIDlotteRy` is to …
+The goal of `PMIDlotteRy` is to have fun! It’s a toy for playing the
+lottery with PMID numbers. A new number is picked each day, have fun
+guessing!
 
 ## Installation instructions
 
