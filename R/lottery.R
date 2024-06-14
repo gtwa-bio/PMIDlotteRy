@@ -15,7 +15,7 @@
 #'
 lottery <- function(lotto_numbers, subject = "genomics") {
     # Select a PMID based on the date
-    PMID_today <- get_PMID()
+    PMID_today <- get_PMID(subject)
 
     # Fetch the PubMed record for the winning PMID
     record_xml <- entrez_fetch(db = "pubmed", id = PMID_today, rettype = "xml")
