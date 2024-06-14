@@ -1,7 +1,8 @@
 #' Play the PMID lottery
 #'
 #' @param lotto_numbers a integer vector of PMID guesses
-#'
+#' @param subject a string for lotto category
+#' 
 #' @importFrom rentrez entrez_fetch
 #' @importFrom XML xpathSApply
 #' @importFrom XML xmlParse
