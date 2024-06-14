@@ -1,4 +1,6 @@
 #' Choose today's PMID
+#' 
+#' @param subject a string for lotto category
 #'
 #' @return PMID for today
 #' @importFrom rentrez entrez_search
