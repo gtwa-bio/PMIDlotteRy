@@ -39,7 +39,7 @@ Get the latest stable `R` release from
 [GitHub](https://github.com/gtwa-bio/PMIDlotteRy) with:
 
 ``` r
-BiocManager::install("gtwa-bio/PMIDlotteRy")
+devtools::install("gtwa-bio/PMIDlotteRy")
 ```
 
 ## Example
