@@ -1,4 +1,4 @@
-#' Title
+#' Choose today's PMID
 #'
 #' @return PMID for today
 #' @importFrom rentrez entrez_search

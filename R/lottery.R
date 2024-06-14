@@ -1,4 +1,4 @@
-#' Title
+#' Play the PMID lottery
 #'
 #' @param lotto_numbers a integer vector of PMID guesses
 #'
