@@ -2,4 +2,6 @@
 
 export(get_PMID)
 export(lottery)
-importFrom(rentrez,entrez_search)
+export(lottery_hint)
+import(XML)
+import(rentrez)

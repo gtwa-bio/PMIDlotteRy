@@ -2,15 +2,18 @@
 % Please edit documentation in R/get_PMID.R
 \name{get_PMID}
 \alias{get_PMID}
-\title{Title}
+\title{Choose today's PMID}
 \usage{
-get_PMID()
+get_PMID(subject = "genomics")
+}
+\arguments{
+\item{subject}{a string for lotto category}
 }
 \value{
 PMID for today
 }
 \description{
-Title
+Choose today's PMID
 }
 \examples{
 get_PMID()

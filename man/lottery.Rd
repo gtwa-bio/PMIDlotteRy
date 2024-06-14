@@ -2,18 +2,20 @@
 % Please edit documentation in R/lottery.R
 \name{lottery}
 \alias{lottery}
-\title{Title}
+\title{Play the PMID lottery}
 \usage{
-lottery(lotto_numbers)
+lottery(lotto_numbers, subject = "genomics")
 }
 \arguments{
 \item{lotto_numbers}{a integer vector of PMID guesses}
+
+\item{subject}{a string for lotto category}
 }
 \value{
-Any guess matches today's PMID
+Whether or not numbers match today's PMID, and information on the paper
 }
 \description{
-Title
+Play the PMID lottery
 }
 \examples{
 lottery(38863995)

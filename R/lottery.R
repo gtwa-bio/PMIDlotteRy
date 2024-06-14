@@ -2,11 +2,10 @@
 #'
 #' @param lotto_numbers a integer vector of PMID guesses
 #' @param subject a string for lotto category
-#' 
-#' @importFrom rentrez entrez_fetch
-#' @importFrom XML xpathSApply
-#' @importFrom XML xmlParse
-#' 
+#'
+#' @import rentrez
+#' @import XML
+#'
 #' @return Whether or not numbers match today's PMID, and information on the paper
 #' @export
 #'

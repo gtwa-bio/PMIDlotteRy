@@ -1,6 +1,8 @@
 #' Hint for today's numbers
-#' 
+#'
 #' @param subject a string for lotto category
+#'
+#' @import rentrez
 #'
 #' @return A hint for today's possible PMID range
 #' @export
