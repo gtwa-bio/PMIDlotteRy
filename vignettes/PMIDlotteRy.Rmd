@@ -54,21 +54,12 @@ bib <- c(
 `R` is an open-source statistical environment which can be easily modified to enhance its functionality via packages. `r Biocpkg("PMIDlotteRy")` is a `R` package available via GitHub [Bioconductor](https://github.com/gtwa-bio/PMIDlotteRy) repository. `R` can be installed on any operating system from [CRAN](https://cran.r-project.org/) after which you can install `r Biocpkg("PMIDlotteRy")` by using the following commands in your `R` session:
 
 ```{r "install", eval = FALSE}
-if (!requireNamespace("BiocManager", quietly = TRUE)) {
-    install.packages("BiocManager")
-}
-
-BiocManager::install("PMIDlotteRy")
-
-## Check that you have a valid Bioconductor installation
-BiocManager::valid()
+devtools::install("gtwa-bio/PMIDlotteRy")
 ```
 
 ## Required knowledge
 
-`r Biocpkg("PMIDlotteRy")` is based on many other packages and in particular in those that have implemented the infrastructure needed for dealing with RNA-seq data. That is, packages like `rentrez`.
-
-If you are asking yourself the question "Where do I start using Bioconductor?" you might be interested in [this blog post](http://lcolladotor.github.io/2014/10/16/startbioc/#.VkOKbq6rRuU).
+`PMIDlotteRy` is a just for fun package that relies on the (PubMed)[https://pubmed.ncbi.nlm.nih.gov/] database. Each day, `PMIDlotteRy` picks a random article from PubMed whose unique ID (PMID) is the day's lucky number. To interface with PubMed, `PMIDlotteRy` utilizes the `rentrez` and `XML` packages.
 
 ## Asking for help
 
@@ -76,7 +67,7 @@ As package developers, we try to explain clearly how to use our packages and in 
 
 ## Citing `PMIDlotteRy`
 
-We hope that `r Biocpkg("PMIDlotteRy")` will be useful for you. Please use the following information to cite the package and the overall approach. Thank you!
+We hope that `PMIDlotteRy` will be fun, and maybe even useful for you. Please use the following information to cite the package and the overall approach. Thank you!
 
 ```{r "citation"}
 ## Citation info
@@ -87,24 +78,21 @@ citation("PMIDlotteRy")
 
 ```{r "start", message=FALSE}
 library("PMIDlotteRy")
+
+## check today's hint
+lottery_hint()
+
 ## Pick your lottery numbers
-lotto_numbers <- c(38863995, 38864247, 38862712, 38862494)
+lotto_numbers <- sample(38883800:38885530, 5, replace = F)
 
 ## Play!
 lottery(lotto_numbers)
 ```
 
-Edit this as you see fit =)
-
-Here is an example of you can cite your package inside the vignette:
-
-* `r Biocpkg("PMIDlotteRy")` `r Citep(bib[["PMIDlotteRy"]])`
-
-
 
 # Reproducibility
 
-The `r Biocpkg("PMIDlotteRy")` package `r Citep(bib[["PMIDlotteRy"]])` was made possible thanks to:
+The `PMIDlotteRy` package `r Citep(bib[["PMIDlotteRy"]])` was made possible thanks to:
 
 * R `r Citep(bib[["R"]])`
 * `r Biocpkg("BiocStyle")` `r Citep(bib[["BiocStyle"]])`
