@@ -1,13 +1,12 @@
-test_that("lottery function works", {
-    # Generate a vector of PMIDs
-    PMIDs <- c(12345678, 23456789, 34567890)
+test_that("Lottery function outputs correct message", {
+  # Assuming 'lottery_function' is your function and 'PMID_today' is defined
+  # Simulate a winning condition
+  winning_output <- capture.output(lottery(get_PMID()))
+  # Simulate a non-winning condition
+  losing_output <- capture.output(lottery(123))
 
-    # Test the lottery function
-    result <- lottery(PMIDs)
-
-    # Check that the result is a character string
-    expect_type(result, "character")
-
-    # Check that the result is one of the expected messages
-    expect_match(result, "Congratulations! You have won the lottery!|Sorry, better luck next time.")
+  # Check if the winning message is in the winning output
+  expect_true("Congratulations! You have won the lottery! " %in% winning_output)
+  # Check if the consolation message is in the losing output
+  expect_false("Sorry, better luck next time." %in% losing_output)
 })
