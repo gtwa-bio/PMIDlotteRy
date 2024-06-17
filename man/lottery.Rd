@@ -7,12 +7,9 @@
 lottery(lotto_numbers, subject = "genomics")
 }
 \arguments{
-\item{lotto_numbers}{a integer vector of PMID guesses}
+\item{lotto_numbers}{An integer vector}
 
-\item{subject}{a string for lotto category}
-}
-\value{
-Whether or not numbers match today's PMID, and information on the paper
+\item{subject}{A string}
 }
 \description{
 Play the PMID lottery
