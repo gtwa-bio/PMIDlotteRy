@@ -1,12 +1,13 @@
 #' Play the PMID lottery
 #'
-#' @param lotto_numbers a integer vector of PMID guesses
-#' @param subject a string for lotto category
+#' @param lotto_numbers An integer vector
+#' @param subject A string
 #'
 #' @import rentrez
 #' @import XML
 #'
-#' @return Whether or not numbers match today's PMID, and information on the paper
+#' @return NULL
+#'
 #' @export
 #'
 #' @examples

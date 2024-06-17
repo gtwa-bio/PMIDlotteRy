@@ -3,13 +3,13 @@ Title: PMID Lottery
 Version: 0.99.0
 Date: 2020-04-29
 Authors@R: 
-    person("Guy", "Twa", , "gtwa@uab.edu", role = c("aut", "cre"))
+    person("Guy", "Twa",
+    email = "gtwa@uab.edu", role = c("aut", "cre"))
 Description: This package selects one PMID number daily, which you're welcome to guess.
-    If you guess right, congradulations! If you don't, that's ok too!
+    If you guess right, congratulations! If you don't, that's ok too!
 License: Artistic-2.0
 URL: https://github.com/gtwa-bio/PMIDlotteRy
-BugReports: https://support.bioconductor.org/tag/PMIDlotteRy
-biocViews: Software
+BugReports: https://github.com/gtwa-bio/PMIDlotteRy/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1

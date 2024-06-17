@@ -11,23 +11,16 @@ issues](https://img.shields.io/github/issues/gtwa-bio/PMIDlotteRy)](https://gith
 pulls](https://img.shields.io/github/issues-pr/gtwa-bio/PMIDlotteRy)](https://github.com/gtwa-bio/PMIDlotteRy/pulls)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![Bioc release
-status](http://www.bioconductor.org/shields/build/release/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/PMIDlotteRy)
-[![Bioc devel
-status](http://www.bioconductor.org/shields/build/devel/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy)
-[![Bioc downloads
-rank](https://bioconductor.org/shields/downloads/release/PMIDlotteRy.svg)](http://bioconductor.org/packages/stats/bioc/PMIDlotteRy/)
-[![Bioc
-support](https://bioconductor.org/shields/posts/PMIDlotteRy.svg)](https://support.bioconductor.org/tag/PMIDlotteRy)
-[![Bioc
-history](https://bioconductor.org/shields/years-in-bioc/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since)
-[![Bioc last
-commit](https://bioconductor.org/shields/lastcommit/devel/bioc/PMIDlotteRy.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy/)
-[![Bioc
-dependencies](https://bioconductor.org/shields/dependencies/release/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since)
-[![check-bioc](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml)
 [![Codecov test
 coverage](https://codecov.io/gh/gtwa-bio/PMIDlotteRy/branch/devel/graph/badge.svg)](https://app.codecov.io/gh/gtwa-bio/PMIDlotteRy?branch=devel)
+<!-- [![Bioc release status](http://www.bioconductor.org/shields/build/release/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/PMIDlotteRy) -->
+<!-- [![Bioc devel status](http://www.bioconductor.org/shields/build/devel/bioc/PMIDlotteRy.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy) -->
+<!-- [![Bioc downloads rank](https://bioconductor.org/shields/downloads/release/PMIDlotteRy.svg)](http://bioconductor.org/packages/stats/bioc/PMIDlotteRy/) -->
+<!-- [![Bioc support](https://bioconductor.org/shields/posts/PMIDlotteRy.svg)](https://support.bioconductor.org/tag/PMIDlotteRy) -->
+<!-- [![Bioc history](https://bioconductor.org/shields/years-in-bioc/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since) -->
+<!-- [![Bioc last commit](https://bioconductor.org/shields/lastcommit/devel/bioc/PMIDlotteRy.svg)](http://bioconductor.org/checkResults/devel/bioc-LATEST/PMIDlotteRy/) -->
+<!-- [![Bioc dependencies](https://bioconductor.org/shields/dependencies/release/PMIDlotteRy.svg)](https://bioconductor.org/packages/release/bioc/html/PMIDlotteRy.html#since) -->
+<!-- [![check-bioc](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml/badge.svg)](https://github.com/gtwa-bio/PMIDlotteRy/actions/workflows/check-bioc.yml) -->
 <!-- badges: end -->
 
 The goal of `PMIDlotteRy` is to have fun! It’s a toy for playing the
@@ -57,7 +50,12 @@ lotto_numbers <- c(38863995, 38864247, 38862711, 38862494)
 
 ## Play!
 lottery(lotto_numbers)
-#> [1] "Sorry, better luck next time."
+#> Sorry, better luck next time. 
+#> 
+#> Check out today's paper in genomics!
+#> Title: In Silico Typing and Identification Confirmation of Isolates.
+#> Authors: Costa MO, Fittipaldi N
+#> PMID: 38884907
 ```
 
 ## Code of Conduct
