@@ -12,5 +12,5 @@ test_that("get_PMID function returns the same number each time", {
   PMID_2 <- get_PMID()
 
   # Check that the result is a number
-  expect_equivalent(PMID_1,PMID_2)
+  expect_equal(PMID_1,PMID_2)
 })
