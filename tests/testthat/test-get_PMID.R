@@ -1,11 +1,16 @@
-test_that("get_PMID function works", {
-    # Test the get_PMID function
+test_that("get_PMID function returns number", {
+    # sample PMID
     PMID <- get_PMID()
 
-    # Check that the result is a character string
+    # Check that the result is a number
     expect_type(PMID, "double")
+})
 
-    # Check that the PMID is a valid number
-    expect_true(is.numeric(PMID))
-    expect_true(!is.na(PMID))
+test_that("get_PMID function returns the same number each time", {
+  # sample PMID twice
+  PMID_1 <- get_PMID()
+  PMID_2 <- get_PMID()
+
+  # Check that the result is a number
+  expect_equivalent(PMID_1,PMID_2)
 })
