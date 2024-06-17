@@ -34,7 +34,7 @@ Get the latest stable `R` release from
 [GitHub](https://github.com/gtwa-bio/PMIDlotteRy) with:
 
 ``` r
-devtools::install("gtwa-bio/PMIDlotteRy")
+devtools::install_github("gtwa-bio/PMIDlotteRy")
 ```
 
 ## Example
@@ -53,9 +53,9 @@ lottery(lotto_numbers)
 #> Sorry, better luck next time. 
 #> 
 #> Check out today's paper in genomics!
-#> Title: In Silico Typing and Identification Confirmation of Isolates.
-#> Authors: Costa MO, Fittipaldi N
-#> PMID: 38884907
+#> Title: Investigating demic versus cultural diffusion and sex bias in the spread of Austronesian languages in Vietnam.
+#> Authors: Thao DH, Dinh TH, Mitsunaga S, Duy D, Phuong NT, Anh NP, Anh NT, Duc BM, Hue HTT, Ha NH, Ton ND, Hübner A, Pakendorf B, Stoneking M, Inoue I, Duong NT, Hai NV
+#> PMID: 38885215
 ```
 
 ## Code of Conduct

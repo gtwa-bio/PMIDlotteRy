@@ -54,7 +54,7 @@ bib <- c(
 `R` is an open-source statistical environment which can be easily modified to enhance its functionality via packages. `r Biocpkg("PMIDlotteRy")` is a `R` package available via GitHub [Bioconductor](https://github.com/gtwa-bio/PMIDlotteRy) repository. `R` can be installed on any operating system from [CRAN](https://cran.r-project.org/) after which you can install `r Biocpkg("PMIDlotteRy")` by using the following commands in your `R` session:
 
 ```{r "install", eval = FALSE}
-devtools::install("gtwa-bio/PMIDlotteRy")
+devtools::install_github("gtwa-bio/PMIDlotteRy")
 ```
 
 ## Required knowledge
